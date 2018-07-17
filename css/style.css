@@ -1,0 +1,32 @@
+.gambar {
+	border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 3px;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 99%;
+    height: 40px;
+    line-height: 40px;
+
+}
+.center_div{
+    margin: 0 auto;
+    width:80% /* value of your choice which suits your alignment */
+}
+.acc-settings {
+    max-width: 250px;
+    padding-top: 20px;
+}
+.alert-atas {
+    max-width: 250px;
+    padding-top: 20px;
+}
+.alert-bawah {
+    max-width: 174px;
+    padding-top: 20px;
+}

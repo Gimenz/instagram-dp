@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Get Instagram profile picture at full size">
+	<title>InstaSpoof</title>
+	<link href="css/style.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="container">
+		<center>
+			<h2>Instagram Profile Downloader</h2><br>
+				<div class="alert alert-info alert-atas">
+					<strong>Info!</strong> Put Username without @
+				</div>
+					<div class="form-group acc-settings">
+						<form id="myForm" action="proses.php" method="POST"" >
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-at"></i></span>
+							<input type="text" name="uname" id=pengguna class="form-control" autofocus="on" placeholder="gimenz.id" autocomplete="off">
+							</div><br>
+							<input id="submit" class="btn btn-success" name="Submit" value="Submit" type="submit"/>
+							</form>
+							</div>
+							<br>
+							  <div class="alert alert-success alert-bawah" >
+							  <strong>Result!</strong>
+							  </div>
+							  
+							  <div class="card" style="width:auto">
+							  <div id="loading" style="display:none;"><img src="https://preloaders.net/preloaders/91/preview.gif" alt="loading..." /></div>
+							  <span align="center-left">
+							  <div id="result" style="display:none;">
+								<div class="card-body"></span>
+								</div></div>
+							  </div>
+						<br>
+				</center>
+			</div>	
+			<footer class="footer">
+		  <div class="container">
+			<span class="text-muted">
+				<span style="float: right">Made with <img src="https://image.flaticon.com/icons/svg/148/148836.svg" width="20px"/> by Gimenz.</span>
+			</span>
+		  </div>
+		</footer>
+</body>
+	<script src="https://code.jquery.com/jquery-1.2.3.min.js" integrity="sha256-8cSgp7XerSMfybQvBpZaA2q3oqeIdohH64HhUo1kAq0="  crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			$().ajaxStart(function() {
+				$('#loading').show();
+				$('#result').hide();
+			}).ajaxStop(function() {
+				$('#loading').hide();
+				$('#result').fadeIn('slow');
+			});
+
+			$('#myForm').submit(function() {
+				$.ajax({
+				type: 'POST',
+				url: $(this).attr('action'),
+				data: $(this).serialize(),
+				success: function(data) {
+					$('#result').html(data);
+				}
+			})
+			return false;
+		});
+	})
+	</script>
+
+</html>
