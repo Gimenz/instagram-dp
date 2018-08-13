@@ -7,7 +7,7 @@
     width: auto;
 }
 .footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 99%;
     height: 40px;
