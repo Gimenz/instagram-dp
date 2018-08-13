@@ -19,7 +19,7 @@
 					<strong>Info!</strong> Put Username without @
 				</div>
 					<div class="form-group acc-settings">
-						<form id="myForm" action="proses.php" method="POST"" >
+						<form id="myForm" action="proses.php" method="POST">
 							<div class="input-group">
 								<span class="input-group-addon"><i class="fa fa-at"></i></span>
 							<input type="text" name="uname" id=pengguna class="form-control" autofocus="on" placeholder="gimenz.id" autocomplete="off">
