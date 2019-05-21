@@ -8,4 +8,4 @@ How To Use?
 2. Upload and extract on your web hosting, if not have you can use xampp 
 3. done
 
-Any Question ? send mail at agaaja187@gmail.cmom
+Any Question ? send mail at agaaja187@gmail.com
