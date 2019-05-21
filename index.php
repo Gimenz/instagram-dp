@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="description" content="Get Instagram profile picture at full size">
-	<title>InstaSpoof</title>
+	<title>Insta Sver</title>
 	<link href="css/style.css" rel="stylesheet"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
@@ -33,7 +33,7 @@
 							  </div>
 							  
 							  <div class="card" style="width:auto">
-							  <div id="loading" style="display:none;"><img src="https://preloaders.net/preloaders/91/preview.gif" alt="loading..." /></div>
+                            				  <div id="loading" style="display:none;"><i class="fa fa-spinner fa-spin fa-5x fa-fw"></i></div>
 							  <span align="center-left">
 							  <div id="result" style="display:none;">
 								<div class="card-body"></span>
