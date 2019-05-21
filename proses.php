@@ -18,8 +18,7 @@ $userh = 'https://instagram.com/'.$decodedInfo->user->username;
 if($html){
 echo '<b>Username:</b> <a href="'.$userh.'" class="card-title">@'.$username.'</a><br><br>';
 echo '<img class="gambar" src="'.$foto.'" width="300" height="300" alt="foto profil"/><br><br>';
-echo '<form action="download.php?url='.$foto.'" method="post">
-<input style="padding:5px;width:100px;text-align:center" class="btn btn-success" type="submit" name="ambil" value="Download">';
+echo '<a href="'.$foto.'&dl=1" style="padding:5px;width:100px;text-align:center" class="btn btn-success" type="submit" name="ambil">Download</a>';
 die();}else{
 echo "The username you entered is incorrect or not found.";
 }}
