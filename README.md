@@ -9,3 +9,6 @@ How To Use?
 3. done
 
 Any Question ? send mail at agaaja187@gmail.com
+
+
+*THIS SCRIPT DOESN'T WORK AGAIN, SINCE INSTAGRAM CHANGE THEIR API. Thanks for known
